@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 1200px; /* 最小宽度 */
+    margin: auto
+}
+
+#page {
+    min-height: 100%;
+    width: 100%;
+    position: relative
+}
+
+#content {
+    margin: 30px 10px;
+    min-height: calc(100vh - 136px)
+}
+
+@media (max-width:1030px) {
+    #content {
+        margin: 10px 10px;
+        min-height: calc(100vh - 136px + 40px)
+    }
+}
+
+@media screen and (max-width: 480px) {
+  /* 针对屏幕宽度小于480px的设备的样式 */
+     #content {
+        margin: 10px 10px;
+        min-height: calc(100vh - 136px + 40px)
+    }
+}
+
+@media screen and (max-width: 768px) {
+  /* 针对屏幕宽度小于768px的设备的样式 */
+     #content {
+        margin: 10px 10px;
+        min-height: calc(100vh - 136px + 40px)
+    }
+}
+
+
+.break {
+    clear: both
+}
+
+body {
+    background-color: #ffffff;
+    color: #090909;
+    font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 120%;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased
+}
+
+strong {
+    font-weight: 600
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 30px;
+    margin-bottom: 30px/2;
+    font-family: Ubuntu, "Open Sans", Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 500
+}
+
+h1 {
+    color: #362c26
+}
+
+h2,
+h3,
+h4 {
+    color: #362c26
+}
+
+h1 {
+    font-size: 200%
+}
+
+h2 {
+    font-size: 150%
+}
+
+h3 {
+    font-size: 125%
+}
+
+h4 {
+    font-size: 100%
+}
+
+a {
+    text-decoration: none;
+    color: #8d9c64
+}
+
+.center {
+    display: block;
+    margin-left: 100px;
+    margin-right: auto
+}
+
+#navbar {
+    overflow: hidden;
+    margin: 0 10px;
+    background-color: #362c26;
+    color: #ffffff;
+    box-shadow: 0 0 0 100vmax #362c26;
+    clip-path: inset(0 -100vmax)
+}
+
+.nav-head,
+.nav-sep,
+.nav-item {
+    display: block;
+    float: left;
+    padding: 10px;
+    font-family: Ubuntu, "Open Sans", Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none
+}
+
+.nav-right {
+    display: block;
+    float: right
+}
+
+.nav-head {
+    color: #fffdf7;
+    padding-left: 0
+}
+
+.nav-item {
+    color: #fffdf7
+}
+
+.nav-sep {
+    color: #6c584c
+}
+
+a:hover.nav-item {
+    background-color: #6c584c;
+    color: #fffdf7
+}
+
+a:hover.nav-head {
+    background-color: #362c26;
+    color: #fffdf7
+}
+
+@media (max-width:600px) {
+    .nav-sep {
+        display: none
+    }
+
+    .nav-head,
+    .nav-item,
+    .nav-right {
+        float: none;
+        width: 100%;
+        text-align: left;
+        padding: 5px 0px
+    }
+
+    #navbar .container {
+        padding-top: 5px;
+        padding-bottom: 5px
+    }
+}
+
+#footer {
+    overflow: hidden;
+    margin: 0 10px;
+    background-color: #362c26;
+    color: #fffdf7;
+    font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    box-shadow: 0 0 0 100vmax #362c26;
+    clip-path: inset(0 -100vmax)
+}
+
+.foot-madeby {
+    display: block;
+    float: right;
+    text-align: right;
+    padding: 10px;
+    font-size: 10px
+}
+
+pre,
+code {
+    font-family: Menlo, "Lucida Console", Courier, monospace;
+    font-size: 90%
+}
+
+pre {
+    margin: 0;
+    margin-left: 1.7em;
+    padding-left: 0.3em;
+    padding-right: 0.3em
+}
+
+.bold-code code {
+    font-weight: bold
+}
+
+.sourceCode span.kw {
+    color: #082
+}
+
+.sourceCode span.dt {
+    color: #709
+}
+
+.sourceCode span.dv,
+.sourceCode span.bn,
+.sourceCode span.fl,
+.sourceCode span.ch,
+.sourceCode span.st {
+    color: #C00
+}
+
+.sourceCode span.co {
+    color: #6AA;
+    font-style: italic
+}
+
+.sourceCode span.al {
+    color: #F00;
+    font-weight: bold
+}
+
+.sourceCode span.er {
+    color: #F00;
+    font-weight: bold
+}
+
+.sourceCode.haskell span.dt {
+    color: #362c26
+}
+
+.sourceCode.haskell span.fu {
+    color: #A62
+}
+
+.sourceCode.bad {
+    display: inline-block;
+    border-color: #BC1C1C;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px
+}
+
+table.numberLines td.sourceCode pre {
+    margin-left: 0.25em
+}
+
+table.numberLines td.lineNumbers {
+    color: #CCC;
+    text-align: right;
+    padding-right: 0.25em
+}
+
+.intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px
+}
+
+.intro-image {
+    float: left;
+    max-width: 100%;
+    object-fit: cover;
+    margin-right: 20px
+}
+
+.intro-text {
+    float: left;
+    display: block;
+    flex: 1 0 10em
+}
+
+.intro-text h1 {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+    width: 9em
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px
+}
+
+.contact-icon-cell {
+    padding: 0
+}
+
+.contact-link-cell {
+    padding: 0 0 0 5px
+}
+
+.pub-list {
+    padding: 0
+}
+
+li.pub-item {
+    display: block;
+    margin-top: 1em
+}
+
+.pub-block {
+    display: inline-block;
+    vertical-align: text-top
+}
+
+.pub-title {
+    font-weight: bold
+}
+
+.pub-best {
+    font-weight: bold
+}
+
+.pub-venue-name {
+    font-style: italic
+}
+
+.pub-issue {
+    font-style: italic
+}
+
+.pub-links {
+    font-size: 90%;
+    font-weight: 600
+}
+
+.pub-abstract {
+    font-size: 90%;
+    display: none
+}
+
+.ref-list:not(.resume) {
+    counter-reset: refCounter
+}
+
+.ref-list li {
+    margin-top: 1em
+}
+
